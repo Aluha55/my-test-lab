@@ -60,7 +60,7 @@ header p { font-size: 1.1em; color: #666; }
 .test-card p { margin-bottom: 0; font-size: 1em; color: #555; }
 
 footer { text-align: center; margin-top: 50px; font-size: 0.9em; color: #999; }
-/* 新增：頁腳鏈接樣式 */
+/* 新增：页脚链接样式 */
 .footer-links {
     margin-bottom: 15px;
 }
@@ -115,12 +115,13 @@ footer { text-align: center; margin-top: 50px; font-size: 0.9em; color: #999; }
 
 .hidden { display: none; }
 
+/* --- Home Link Button Styles (已更新) --- */
 .home-link {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #5c7b9a;
-    color: #fff; /* <--- 保证文字是白色的关键代码 */
+    color: #fff; /* 确保文字是白色 */
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.2s;
@@ -128,6 +129,12 @@ footer { text-align: center; margin-top: 50px; font-size: 0.9em; color: #999; }
 
 .home-link:hover {
     background-color: #4a637b;
+}
+
+/* 专门为静态页面中的“返回首页”按钮增加居中样式 */
+.static-page-container .home-link {
+    display: table;
+    margin: 40px auto 0;
 }
 
 .progress-container { 
@@ -182,26 +189,26 @@ footer { text-align: center; margin-top: 50px; font-size: 0.9em; color: #999; }
 .shape-5 { border-radius: 15%; transform: rotate(0deg); } /* Rounded Square - 修正为摆正 */
 
 
-/* --- 新增：頭像文字排版樣式 --- */
+/* --- 新增：头像文字排版样式 --- */
 .avatar-shape.chinese-four-chars span {
-    font-size: 2.2em; /* 四個漢字使用較大字體 */
-    line-height: 1.1; /* 調整行高讓兩行更緊湊 */
+    font-size: 2.2em; /* 四个汉字使用较大字体 */
+    line-height: 1.1; /* 调整行高让两行更紧凑 */
 }
 
 .avatar-shape.chinese-long-chars span {
-    font-size: 1.6em; /* 超過四個漢字，縮小字體 */
-    line-height: 1.1; /* 調整行高讓兩行更緊湊 */
-    padding: 0 5px; /* 增加左右內邊距以防文字過長溢出 */
+    font-size: 1.6em; /* 超过四个汉字，缩小字体 */
+    line-height: 1.1; /* 调整行高让两行更紧凑 */
+    padding: 0 5px; /* 增加左右内边距以防文字过长溢出 */
 }
 
 .avatar-shape.chinese-single-line span,
 .avatar-shape.english-single-line span {
-    font-size: 1.8em; /* 預設大小，單行顯示 */
+    font-size: 1.8em; /* 预设大小，单行显示 */
     line-height: 1.2;
 }
 
 .avatar-shape.english-long-chars span {
-    font-size: 1.4em; /* 英文長字符縮小 */
+    font-size: 1.4em; /* 英文长字符缩小 */
     line-height: 1.2;
     padding: 0 5px;
 }
@@ -266,7 +273,7 @@ footer { text-align: center; margin-top: 50px; font-size: 0.9em; color: #999; }
 .share-qrcode-placeholder img { width: 100% !important; height: 100% !important; }
 .share-url-placeholder { font-size: 20px; margin-top: 0; font-weight: bold; color: #5c5552; }
 
-/* 新增：靜態內容頁面樣式 */
+/* 新增：静态内容页面样式 */
 .static-page-container {
     background-color: #fff;
     padding: 30px 40px;
@@ -294,7 +301,7 @@ footer { text-align: center; margin-top: 50px; font-size: 0.9em; color: #999; }
     text-decoration: underline;
 }
 
-/* --- 新增：圖片預覽浮層樣式 --- */
+/* --- 新增：图片预览浮层样式 --- */
 #image-preview-modal {
     position: fixed;
     z-index: 100;
@@ -340,7 +347,7 @@ footer { text-align: center; margin-top: 50px; font-size: 0.9em; color: #999; }
 }
 #image-preview-modal img {
     max-width: 100%;
-    max-height: calc(90vh - 100px); /* 確保圖片在視口內 */
+    max-height: calc(90vh - 100px); /* 确保图片在视口内 */
     border-radius: 5px;
 }
 
@@ -367,14 +374,14 @@ footer { text-align: center; margin-top: 50px; font-size: 0.9em; color: #999; }
     #progress-text { font-size: 0.85em; }
     .static-page-container { padding: 20px; }
 
-    /* 移動端頭像文字調整 */
+    /* 移动端头像文字调整 */
     .avatar-shape.chinese-four-chars span {
-        font-size: 1.8em; /* 移動端四個漢字略微縮小 */
+        font-size: 1.8em; /* 移动端四个汉字略微缩小 */
     }
     .avatar-shape.chinese-long-chars span {
-        font-size: 1.3em; /* 移動端超過四個漢字進一步縮小 */
+        font-size: 1.3em; /* 移动端超过四个汉字进一步缩小 */
     }
     .avatar-shape.english-long-chars span {
-        font-size: 1.1em; /* 移動端英文長字符進一步縮小 */
+        font-size: 1.1em; /* 移动端英文长字符进一步缩小 */
     }
 }
