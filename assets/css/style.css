@@ -115,13 +115,13 @@ footer { text-align: center; margin-top: 50px; font-size: 0.9em; color: #999; }
 
 .hidden { display: none; }
 
-/* --- Home Link Button Styles (已更新) --- */
+/* --- Home Link Button Styles (最终修正版) --- */
 .home-link {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #5c7b9a;
-    color: #fff; /* 确保文字是白色 */
+    color: #fff !important; /* <--- 最终修正：添加 !important 确保最高优先级 */
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.2s;
